@@ -176,24 +176,25 @@ function showQuestion(){
 
 
 
-    let total =
-    questions.filter(q=>{
+// 目前分類的題庫
+    let pool = questions.filter(q => {
 
-        if(currentCategory==="全部")
+        if(currentCategory === "全部")
             return true;
 
-        return q.category===currentCategory;
+        return q.category === currentCategory;
 
+    });
 
-    }).length;
+    // 題庫總數
+    let total = pool.length;
 
+    // 已抽題數（只算目前分類）
+    let used = pool.filter(q =>
+        usedQuestions.includes(q.text)
+    ).length;
 
-
-    let used =
-    usedQuestions.length;
-
-
-
+    // 更新畫面
     number.innerHTML =
     `已抽 ${used} 題 / 題庫 ${total} 題`;
 
