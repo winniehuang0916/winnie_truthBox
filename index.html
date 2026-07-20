@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>TruthBox 真心話</title>
+
+
+<!-- PWA -->
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#764ba2">
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<header>
+
+<h1>🎲 TruthBox</h1>
+
+<p>真心話題庫</p>
+
+</header>
+
+
+
+<!-- 分類 -->
+
+<section class="category-box">
+
+
+<button 
+class="category active"
+data-category="全部">
+
+🎲 全部
+
+</button>
+
+
+
+<button 
+class="category"
+data-category="搞笑">
+
+😂 搞笑
+
+</button>
+
+
+
+<button 
+class="category"
+data-category="感情">
+
+❤️ 感情
+
+</button>
+
+
+
+<button 
+class="category"
+data-category="秘密">
+
+🤫 秘密
+
+</button>
+
+
+
+<button 
+class="category"
+data-category="辛辣">
+
+🔥 辛辣
+
+</button>
+
+
+
+<button 
+class="category"
+data-category="地獄">
+
+😈 地獄
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+<!-- 題目卡 -->
+
+<main class="card">
+
+
+<div id="categoryName">
+
+等待抽題
+
+</div>
+
+
+
+<div id="question">
+
+點擊「抽一題」開始
+
+</div>
+
+
+
+<div id="number">
+
+題目進度
+
+</div>
+
+
+
+</main>
+
+
+
+
+
+<!-- 主操作 -->
+
+
+<section class="buttons">
+
+
+<button id="randomBtn">
+
+🎲 抽一題
+
+</button>
+
+
+
+<button id="favoriteBtn">
+
+❤️ 收藏
+
+</button>
+
+
+
+<button id="nextBtn">
+
+➡ 下一題
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+<!-- 工具 -->
+
+
+<section class="tools">
+
+
+<button id="favoriteListBtn">
+
+⭐ 收藏
+
+</button>
+
+
+
+<button id="resetBtn">
+
+🔄 重置
+
+</button>
+
+
+
+<button id="darkBtn">
+
+🌙 夜間
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+<!-- 收藏視窗 -->
+
+
+<div 
+id="favoritePanel"
+class="hidden">
+
+
+<h2>
+
+❤️ 我的收藏
+
+</h2>
+
+
+
+<div id="favoriteList">
+
+</div>
+
+
+
+<button id="closeFavorite">
+
+關閉
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src="questions.js"></script>
+
+<script src="app.js"></script>
+
+
+
+</body>
+
+
+</html>

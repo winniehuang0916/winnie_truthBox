@@ -1,0 +1,23 @@
+{
+    "name": "TruthBox 真心話",
+    "short_name": "TruthBox",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#764ba2",
+    "theme_color": "#764ba2",
+
+    "description": "朋友聚會真心話題庫 App",
+
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
