@@ -1,4 +1,4 @@
-const CACHE_NAME = "truthbox-v2";
+const CACHE_NAME = "truthbox-v3";
 
 
 const files = [
